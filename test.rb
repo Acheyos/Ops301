@@ -1,1 +1,1 @@
-puts "This is a test to see if the repository is connceted to github.".reverse
+ pts "TeSStttTTttST and then see if this reverses".upcase.reverse.downcase
