@@ -1,22 +1,29 @@
 #!/bin/bash
+e=y
 
+while [ $e = y ]
+do
+echo "Please choose:"
+echo "1) Hello world!"
+echo "2) Ping Self"
+echo "3) IP Info"
+echo "4) Exit"
 
-x=y
-while [ $x = y ]
-do 
-echo "Choose from the following"
-echo "1 Hello World!"
-echo "2 Ping Self"
-echo "3 IP Information"
-echo "4 Exit"
 read a
+
 if [ $a = 1 ]
-    then echo "Hello World!"
+    then echo "Hello world!"
+
 elif [ $a = 2 ]
     then ping -c 3 localhost
-elif [ $a = 3 ]
-    then ifconfig
-else [$a = 4 ]
-    Exit
 
+elif [ $a = 3 ] 
+    then ifconfig
+
+else [ $a = 4 ]
+    exit
 fi
+
+echo "Do you want to try again, y or n?"
+read e
+done
