@@ -9,33 +9,11 @@ if number % 2 == 0:
 else:
     print(f"{number} is an odd number")
 
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
-
-​
 
 # Create a program using maths and f-Strings that tells us how many 
 
 # days, weeks, months we have left if we live until 90 years old.
 
-​
 
 # 🚨 Don't change the code below 👇
 age = int(input("What is your current age? "))
